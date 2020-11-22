@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="...">
+    <title>Resources for Russian learners</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="russia_flags_flag_17058.ico">
+
+  </head>
+
+
+  <body onload="index()">
+
+    <header>Welcome to my litte library of Russian courses and tools!</header>
+    <div class="wrapper">
+      <div class="sidebar">
+	      		<div class="btn" onclick="index()">Home</div>
+	      		<div class="btn" onclick="russianPod()">Russianpod101</div>
+	        	<div class="btn" onclick="podcasts()">Podcasts</div>
+	        	<div class="btn" onclick="duolingo()">Duolingo</div>
+	        	<div class="btn" onclick="about()">About Me</div>
+      </div>
+      <div class="content">
+      	<h2 id="header"></h2>
+      	<p id="paragraph"></p>
+      	<a id="link" href="" target="_blank"><img src="" id="image"></a>
+
+      	<img id="indexImg" src="">
+      </div> 
+    </div>
+    <footer>Michał Krajnik all rights reserved &#169</footer>
+
+    <script>
+
+    	var indexText = "Here is a beautiful foto of St. Basil's Cathedral by <a href='https://pixabay.com/users/designerpoint-554875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1556561'>Michael Siebert</a> from <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1556561'>Pixabay</a>. If you want to visit Russia or other russian speaking countries it is a good idea to get a basic vocabulary and learn how to read cyrillic script. On this site I provide you with some resources that help me greatly in my studies. Enjoy!"
+    	function index(){
+			document.getElementById("header").innerHTML= "Привет! Добро пожаловать на мой сайт!";
+			document.getElementById("paragraph").innerHTML= indexText;
+			document.getElementById("image").src= "moscow.jpg";
+			document.getElementById("link").href= "https://en.wikipedia.org/wiki/Saint_Basil%27s_Cathedral";
+		}
+
+    	var russianPodText = "RussianPod101.com offers a unique learning experience that cannot be found in conventional classrooms. In addition to offering lessons that can be completed on your own time, we approve all of the content we release through a certified Russian teacher. Here are just a few of the revolutionary advantages of our method: Exposure to native speakers and many different kinds of voices and speaking styles RussianPod101.com aims to have you speaking Russian after just one lesson! Our lessons focus on pronunciation and listening comprehension, so that you can start practicing what you learn from our professional teachers. Inside the PDF lesson notes, you will find the necessary tools for reading comprehension, and thorough explanations of phrases and key grammar points, in addition to a segment dedicated to cultural information."
+		function russianPod(){
+			document.getElementById("header").innerHTML= "Russianpod101";
+			document.getElementById("paragraph").innerHTML= russianPodText;
+			document.getElementById("image").src= "russianpod.png";
+			document.getElementById("link").href= "https://www.russianpod101.com/";
+		}
+
+		var podcastsText = "There are many podcasts creators both at YouTube and Spotify. You can always look for the one that you will like. I can recommend two that have accounts on both YT and Spotify. First is <a target='_blank' href='https://realrussianclub.com/'>RealRussianClub</a>, second is <a target='_blank' href='https://www.russianwithmax.com/'>Russian With Max</a>."
+		function podcasts(){
+			document.getElementById("header").innerHTML= "Podcasts";
+			document.getElementById("paragraph").innerHTML= podcastsText;
+			document.getElementById("image").src= "yt.gif";
+			document.getElementById("link").href= "https://www.youtube.com/results?search_query=russian+podcast";
+		}
+
+		var duolingoText = "Duolingo is the most popular language-learning platform and the most downloaded education app in the world, with more than 300 million users. The company’s mission is to make education free, fun, and accessible to all. Duolingo is designed to feel like a game and scientifically proven to be effective. In addition to its core platform, the company created the Duolingo English Test, an affordable and convenient language certification option that is accepted by over 2,000 universities. The company has raised more than $148 million in venture capital from investors including CapitalG, Kleiner Perkins Caufield Byers, Union Square Ventures, New Enterprise Associates, Drive Capital, General Atlantic, Ashton Kutcher, and Tim Ferriss."
+		function duolingo(){
+			document.getElementById("header").innerHTML= "Duolingo";
+			document.getElementById("paragraph").innerHTML= duolingoText;
+			document.getElementById("image").src= "duolingo.png";
+			document.getElementById("link").href= "https://www.duolingo.com/";
+		}
+
+		var aboutText = "I'm a student of Informtion technology in Wyższa Szkoła Bankowa. In my free time I enjoy learning russian and coding. That's all you need to know ;) Hope my little site helps you find resources to start learning too!"
+		function about(){
+			document.getElementById("header").innerHTML= "About me";
+			document.getElementById("paragraph").innerHTML= aboutText;
+			document.getElementById("image").src= "flag.jpg";
+			document.getElementById("link").href= "https://en.wikipedia.org/wiki/Russian_language";
+		}
+		
+	</script>
+
+  </body>
+</html>

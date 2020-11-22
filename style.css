@@ -1,0 +1,98 @@
+body{
+/* Background pattern from Toptal Subtle Patterns */
+	background-image: url(blue-snow.png); 
+	font-family: system-ui, serif;
+}
+
+header{
+	background-color: #bcf2f5;
+	border: 3px dotted #12b5de;
+	text-align: center;
+	padding: 0.6rem;
+	font-size: 2rem;
+	font-style: italic;
+}
+
+footer{
+	background-color: #bcf2f5;
+	border: 3px dotted #12b5de;
+	margin: 2rem, 1rem;
+	text-align: center;
+	font-style: italic;
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	height: auto;
+	max-width: 65%;	
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: minmax(168px, 18%) 1fr;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar{
+	height: 84vh;
+	overflow: hidden;
+	font-size: 1.4rem;
+	text-align: center;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	align-items: top;
+}
+
+.content{
+	padding: 1rem;
+}
+
+.content > h2 {
+	text-align: center;
+	font-size: 42px;
+	font-family: serif;
+	font-style: italic;
+}
+
+.content > p {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 20px;
+	font-family: serif;
+}
+
+.content > a > img {
+	height: auto;
+	max-width: 40%;
+}
+
+.btn{
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	border: 3px dotted #c79ae3;
+	background-color: #ecd4fc;
+}
+
+.btn:hover{
+	background-color: #ab98b8;
+}
+
+.btn:active{
+	background-color: #bcf2f5;
+	color: white;
+}
